@@ -36,6 +36,9 @@ Optional arguments: `gzip: true`
 ```ruby
 client = Exponent::Push::Client.new
 # client = Exponent::Push::Client.new(gzip: true)  # for compressed, faster requests
+# client = Exponent::Push::Client.new(headers: {
+#  'Authorization' => 'Bearer ACCESS_TOKEN',
+# })  # to set access token
 
 messages = [{
   to: "ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]",
