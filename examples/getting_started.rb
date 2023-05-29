@@ -40,7 +40,7 @@ class Test
     messages = [create_message]
 
     response_handler = @client.send_messages(messages)
-    puts response_handler.response.response_body
+    puts response_handler.response.body
   end
 end
 
