@@ -37,7 +37,7 @@ module Exponent
   module Push
     class Client
       def initialize(**args)
-        @http_client = args[:http_client] || Typhoeus
+        @http_client = args[:http_client] || HTTParty
         @error_builder = ErrorBuilder.new
         # future versions will deprecate this
         @response_handler = args[:response_handler] || ResponseHandler.new
