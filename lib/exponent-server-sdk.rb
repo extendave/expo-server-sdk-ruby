@@ -1,6 +1,6 @@
 require 'exponent-server-sdk/version'
 require 'exponent-server-sdk/too_many_messages_error'
-require 'typhoeus'
+require 'httparty'
 require 'json'
 
 # Basic Usage:
